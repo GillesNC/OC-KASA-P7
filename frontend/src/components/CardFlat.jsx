@@ -1,5 +1,6 @@
 import React from "react";
 import DataFlat from "../data/dataFlat.json";
+import "../styles/CardFlat.scss";
 
 function CardFlat() {
     return (
@@ -8,7 +9,6 @@ function CardFlat() {
                 <div className="card">
                     <p>{DataFlat.title}</p>
                 </div>
-
             </section>
         ))
     );
