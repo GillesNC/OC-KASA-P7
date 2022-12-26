@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/Header.scss";
+// import "../styles/Header.scss";
 import LogoKasa from "../assets/logo.svg";
 
 function Header () {

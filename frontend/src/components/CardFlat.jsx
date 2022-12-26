@@ -1,6 +1,6 @@
 import React from "react";
 import DataFlat from "../data/dataFlat.json";
-import "../styles/CardFlat.scss";
+// import "../styles/CardFlat.scss";
 
 function CardFlat() {
     return (

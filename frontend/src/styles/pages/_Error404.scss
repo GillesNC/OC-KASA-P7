@@ -1,0 +1,28 @@
+.error404 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+
+    span {
+        color: #ff6060;
+        font-size: 100px;
+        font-weight: bold;
+    }
+
+    p {
+        color: #ff6060;
+        text-align: center;
+        font-weight: 500;
+        margin-bottom: 150px;
+    }
+
+    a {
+        color: #ff6060;
+    }
+
+    a:hover {
+        font-weight: 700;
+    }
+}
