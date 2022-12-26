@@ -1,11 +1,10 @@
 import React from "react";
-// import "../styles/Banner.scss";
 
 function Banner () {
     return (
         <section className="banner">
-            <div className="bannerImage">
-                <div className="bannerText">
+            <div className="banner__Image">
+                <div className="banner__Text">
                     <p>Chez vous, partout et ailleurs</p>
                 </div>
             </div>

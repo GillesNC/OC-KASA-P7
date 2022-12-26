@@ -1,14 +1,16 @@
 import React from "react";
 import DataFlat from "../data/dataFlat.json";
-// import "../styles/CardFlat.scss";
 
 function CardFlat() {
     return (
         DataFlat.map((DataFlat) => (
-            <section className="cardFlat" key={DataFlat.id}>
-                <div className="card">
-                    <p>{DataFlat.title}</p>
-                </div>
+            <section className="flat" key={DataFlat.id}>
+                <article className="flat__card">
+                    <div className="flat__text">
+                        <h3>{DataFlat.title}</h3> 
+                    </div>
+                    <img src={DataFlat.cover} alt={DataFlat.title}/> 
+                </article>
             </section>
         ))
     );

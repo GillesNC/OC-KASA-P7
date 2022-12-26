@@ -1,5 +1,4 @@
 import React from "react";
-// import "../styles/Header.scss";
 import LogoKasa from "../assets/logo.svg";
 
 function Header () {
@@ -10,8 +9,8 @@ function Header () {
             </div>
             <nav>
                 <ul>
-                    <li><a href="/">Home</a></li>
-                    <li><a href="../pages/About">About</a></li>
+                    <li><a href="/">Accueil</a></li>
+                    <li><a href="../pages/About">A Propos</a></li>
                 </ul>
             </nav>
         </header>
