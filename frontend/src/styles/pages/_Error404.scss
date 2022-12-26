@@ -12,9 +12,8 @@
     }
 
     .errorText {
-        width: 250px;
-
         p {
+            font-size: 25px;
             color: #ff6060;
             text-align: center;
             font-weight: 500;
@@ -23,12 +22,50 @@
     }
 
     a {
-        font-size: 18px;
+        font-size: 20px;
         font-weight: 500;
         color: #ff6060;
     }
 
     a:hover {
         font-weight: 700;
+    }
+}
+
+// Responsive Mobile
+@media screen and (max-width: 768px) {
+    .error404 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 600px;
+    
+        span {
+            color: #ff6060;
+            font-size: 100px;
+            font-weight: bold;
+        }
+    
+        .errorText {
+            width: 250px;
+    
+            p {
+                color: #ff6060;
+                text-align: center;
+                font-weight: 500;
+                margin-bottom: 150px;
+            }
+        }
+    
+        a {
+            font-size: 18px;
+            font-weight: 500;
+            color: #ff6060;
+        }
+    
+        a:hover {
+            font-weight: 700;
+        }
     }
 }

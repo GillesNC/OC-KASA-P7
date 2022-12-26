@@ -1,12 +1,49 @@
 @import "../utils/variable";
 
+.flat {
+    display: flex;
+    flex-direction: row;
+
+    &__card {
+        display: flex;
+        height: 300px;
+        width: 585px;
+        border-radius: 10px;
+        margin: 20px;
+        overflow: hidden;
+
+        img {
+            width: 100%;
+            object-fit: cover ;
+        }
+    }
+
+    &__card:hover {
+        transform:scale(1.03);
+        transition: 800ms;
+        cursor: pointer;
+    }
+
+    &__text { 
+        display: flex;
+        align-items: flex-end;
+        width: 300px;
+        height: 300px;
+        position: absolute;
+
+        h3 {
+            color: white;
+            margin: 0 0 15px 15px
+        }
+    }
+}
+
 // Responsive Mobile
 @media screen and (max-width: 768px) {
     .flat {
         display: flex;
         flex-direction: column;
-        margin-top: 20px;
-        display: flex;
+        margin: 20px 0 0 0;
         width: 100%;
     
         &__card {
