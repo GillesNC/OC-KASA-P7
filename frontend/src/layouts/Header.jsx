@@ -10,7 +10,7 @@ function Header () {
             <nav>
                 <ul>
                     <li><a href="/">Accueil</a></li>
-                    <li><a href="../pages/About">A Propos</a></li>
+                    <li><a href="../About">A Propos</a></li>
                 </ul>
             </nav>
         </header>
