@@ -1,0 +1,11 @@
+@import "../utils/variable";
+@import "../utils/mixins";
+
+main {
+    @include flex-center;
+    width: 100%;
+
+    .about {
+        width: 100%;
+    }
+}
