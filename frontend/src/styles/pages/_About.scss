@@ -6,6 +6,23 @@ main {
     width: 100%;
 
     .about {
-        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-top: 50px;
+        justify-content: space-between;
+        width: 80%;
+    }
+}
+
+// Responsive Mobile
+@media screen and (max-width: 768px) {
+    main {
+        .about {
+            display: flex;
+            flex-direction: column;
+            margin-top: 50px;
+            justify-content: space-between;
+            width: 100%;
+        }
     }
 }
