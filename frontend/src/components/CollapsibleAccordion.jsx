@@ -11,8 +11,8 @@ function CollapsibleAccordion ({title, content}) {
         <article className="accordion">
             <div className="accordion__title" onClick={handleClick}>
                 <h2>{title}</h2>
-                {active ? <span className="material-symbols-outlined">expand_more</span> :
-                <span className="material-symbols-outlined">expand_less</span>}
+                {active ? <span className="material-symbols-outlined">expand_less</span> :
+                <span className="material-symbols-outlined">expand_more</span>}
             </div>
             {active && <div className="accordion__content">
                 <p>{content}</p>

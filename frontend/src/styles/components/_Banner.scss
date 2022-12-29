@@ -27,7 +27,7 @@
 
     &__Image {
         @include flex-center;
-        background-image: linear-gradient(rgba(0, 0, 0, 0.253), rgba(0, 0, 0, 0.122)), url("../assets/background_About.webp");
+        background-image: linear-gradient(rgba(0, 0, 0, 0.400), rgba(0, 0, 0, 0.400)), url("../assets/background_About.webp");
         background-position: center;
         background-size: cover;
         border-radius: 10px;
@@ -70,7 +70,7 @@
     
         &__Image {
             justify-content: flex-start;
-            background-image: linear-gradient(rgba(0, 0, 0, 0.253), rgba(0, 0, 0, 0.122)), url("../assets/background_About.webp");
+            background-image: linear-gradient(rgba(0, 0, 0, 0.400), rgba(0, 0, 0, 0.400)), url("../assets/background_About.webp");
             background-position: center;
             background-size: cover;
             border-radius: 10px;

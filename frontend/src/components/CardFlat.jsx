@@ -9,7 +9,9 @@ function CardFlat() {
                     <div className="flat__text">
                         <h3>{DataFlat.title}</h3> 
                     </div>
-                    <img src={DataFlat.cover} alt={DataFlat.title}/> 
+                    <div className="flat__image">
+                        <img src={DataFlat.cover} alt={DataFlat.title}/>
+                    </div>
                 </article>
             </div>
         ))
