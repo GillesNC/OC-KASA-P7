@@ -1,5 +1,5 @@
 .App {
-    margin: 0 10px 0 10px;
+    margin: 0 50px 0 50px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -10,3 +10,10 @@
       background-color: #f6f6f6;
     }
   }
+
+  // Responsive Mobile
+@media screen and (max-width: 768px) {
+  .App {
+    margin: 0 10px 0 10px;
+  }
+}

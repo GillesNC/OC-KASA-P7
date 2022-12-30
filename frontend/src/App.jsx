@@ -2,7 +2,7 @@ import React from "react";
 import "../src/index.scss";
 import Home from "./pages/Home";
 import About from "./pages/About";
-// import Flat from "./pages/FlatCard";
+import Housing from "./pages/Housing";
 import Error404 from "./pages/Error404";
 import Header from './layouts/Header';
 import Footer from './layouts/Footer';
@@ -15,8 +15,8 @@ function App() {
         <Routes>
           <Route path='/'element={<Home />} />
           <Route path='/About' element={<About/>} />
-          {/* <Route path='/flat' element={<Flat/>} /> */}
-          <Route path='/*' element={<Error404/>} />
+          <Route path='/Housing/:id' element={<Housing/>} />
+          <Route path='*' element={<Error404/>} />
         </Routes>
       <Footer />
     </div>

@@ -1,0 +1,10 @@
+@import "../utils/variable";
+@import "../utils/mixins";
+
+.housing {
+    display: flex;
+    
+    &__carrousel {
+        background-color: aqua;
+    }
+}

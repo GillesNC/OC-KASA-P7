@@ -5,7 +5,7 @@
 // Import Components
 @import "./styles/components/Banner";
 @import "./styles/components/CardFlat";
-@import "./styles/components/CollapsibleAccordion";
+@import "./styles/components/AccordionAbout";
 
 // Import Layouts
 @import "./styles/layouts/Header";
@@ -15,6 +15,7 @@
 @import "./styles/pages/Home";
 @import "./styles/pages/Error404";
 @import "./styles/pages/About";
+@import "./styles/pages/Housing";
 
 // Import Utils
 @import "./styles/utils/mixins";

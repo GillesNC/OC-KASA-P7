@@ -2,7 +2,7 @@ import React from "react";
 
 function Error() {
     return (
-        <section className="error404">
+        <main className="error404">
             <div className="404">
                 <span>404</span>
             </div>
@@ -12,7 +12,7 @@ function Error() {
             <div>
                 <a href="/">Retourner sur la page d'accueil</a>
             </div>
-        </section>  
+        </main>  
     )
 }
  
