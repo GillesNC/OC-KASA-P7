@@ -1,29 +1,23 @@
 import React from "react";
 import { useParams } from "react-router-dom";
+import Carrousel from "../components/Carrousel";
+import ContentHousing from "../components/ContentHousing";
 // import AccordionHousing from "../components/AccordionHousing"
-// import ImageCarrousel from "../assets/carrousel.webp";
 
 function Housing () {
-    const {id} = useParams();
-    console.log(id);
-
+    const {idUrl} = useParams();
+    console.log(idUrl);
+    
     return (
         <main className="housing">
             <section>
                <article className="housing__carrousel">
-                    <p>{id}</p>
+                    <Carrousel />
                </article>
             </section>
 
             <section className="housing__content">
-                <article className="housing__title">
-                </article>
-
-                <article className="housing__tag">
-                </article>
-
-                <article className="housing__star">
-                </article>
+                <ContentHousing />
             </section>
 
             <section>
