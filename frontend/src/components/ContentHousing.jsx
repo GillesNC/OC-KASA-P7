@@ -4,7 +4,6 @@ import DataFlat from "../data/dataFlat.json";
 
 function ContentHousing () {
     const {idUrl} = useParams();
-
     const flatExist = DataFlat.find((DataFlat) => DataFlat.id === idUrl)
 
     return (
@@ -20,6 +19,11 @@ function ContentHousing () {
             </div>
 
             <div className="housing__star">
+                <span>{flatExist.rating}</span>
+                <div className="housing__profil">
+                    <p>{flatExist.host.name}</p>
+                    <img src={flatExist.host.picture} alt={flatExist.host.name} />
+                </div>
             </div>
         </article>
     )

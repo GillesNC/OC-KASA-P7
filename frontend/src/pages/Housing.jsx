@@ -2,7 +2,7 @@ import React from "react";
 import { useParams } from "react-router-dom";
 import Carrousel from "../components/Carrousel";
 import ContentHousing from "../components/ContentHousing";
-// import AccordionHousing from "../components/AccordionHousing"
+import AccordionHousing from "../components/AccordionHousing";
 
 function Housing () {
     const {idUrl} = useParams();
@@ -22,7 +22,7 @@ function Housing () {
 
             <section>
                 <article className="housing__accordion">
-                    {/* <AccordionHousing /> */}
+                    <AccordionHousing />
                 </article>
             </section>
         </main>
