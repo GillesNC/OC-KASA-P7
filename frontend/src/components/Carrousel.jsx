@@ -6,9 +6,9 @@ import DataFlat from "../data/dataFlat.json";
 function Carrousel () {
   const {idUrl} = useParams();
   const flatExist = DataFlat.find((DataFlat) => DataFlat.id === idUrl)
-  const [currentIndex, setCurrentIndex] = useState(0);
   const images = flatExist.pictures;
 
+  const [currentIndex, setCurrentIndex] = useState(0);
   const prev = () => {
     const newIndex = currentIndex - 1;
     setCurrentIndex(newIndex < 0 ? images.length - 1 : newIndex);

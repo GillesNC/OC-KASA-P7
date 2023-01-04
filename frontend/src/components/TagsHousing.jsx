@@ -8,7 +8,7 @@ function TagsHousing () {
     const tag = flatExist.tags.map (tags => {
         return <span key={tags}>{tags}</span>
     })
-    console.log(tag);
+    // console.log(tag);
 
     // const tag = flatExist.tags.forEach(function(item) {
     //     console.log(item);

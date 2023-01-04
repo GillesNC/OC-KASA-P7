@@ -1,12 +1,11 @@
 import React from "react";
-// import { useParams } from "react-router-dom";
 import Carrousel from "../components/Carrousel";
 import TitleHousing from "../components/TitleHousing";
 import TagsHousing from "../components/TagsHousing";
 import AccordionHousing from "../components/AccordionHousing";
+import RatingsHousing from "../components/RatingsHousing";
 
 function Housing () {
-    
     return (
         <main className="housing">
             <section>
@@ -21,10 +20,13 @@ function Housing () {
             </section>
 
             <section>
-                <article className="housing__accordion">
-                    <AccordionHousing />
-                </article>
+                <RatingsHousing />
             </section>
+
+            <section className="housing__accordion">
+                    <AccordionHousing />
+            </section>
+
         </main>
     )
 }

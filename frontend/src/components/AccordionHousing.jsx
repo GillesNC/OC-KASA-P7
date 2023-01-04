@@ -5,23 +5,45 @@ import { useState } from "react";
 
 function AccordionHousing() {
     const {idUrl} = useParams();
-    const flatExist = DataFlat.find((DataFlat) => DataFlat.id === idUrl)
+    const flatExist = DataFlat.find((DataFlat) => DataFlat.id === idUrl);
+    const flatequipments = flatExist.equipments.map (equipments => {
+        return <p key={equipments}>{equipments}</p>
+    })
 
-    const [active, setActive] = useState(false);
-    const handleClick = () => {
-        setActive(!active);
+    const [activeDesc, setActiveDesc] = useState(false);
+    const handleClickDesc = () => {
+        setActiveDesc(!activeDesc);
     }
 
+    const [activeEquip, setActiveEquip] = useState(false);
+    const handleClickEquip = () => {
+        setActiveEquip(!activeEquip);
+    }
+    
+
     return (
-        <article className="accordion">
-            <div className="accordion__title" onClick={handleClick}>
-                <h2>Description</h2>
-                {active ? <span className="material-symbols-outlined">expand_less</span> :
-                <span className="material-symbols-outlined">expand_more</span>}
+        <article className="accordionHousing">
+            <div className="accordionHousing__container">
+                <div className="accordionHousing__title" onClick={handleClickDesc}>
+                    <h2>Description</h2>
+                    {activeDesc ? <span className="material-symbols-outlined">expand_less</span> :
+                    <span className="material-symbols-outlined">expand_more</span>}
+                </div>
+                    {activeDesc && <div className="accordionHousing__content">
+                    <p>{flatExist.description}</p>
+                </div>}
             </div>
-            {active && <div className="accordion__content">
-                <p>{flatExist.description}</p>
-            </div>}
+
+            <div className="accordionHousing__container">
+                <div className="accordionHousing__title" onClick={handleClickEquip}>
+                    <h2>Équipements</h2>
+                    {activeEquip ? <span className="material-symbols-outlined">expand_less</span> :
+                    <span className="material-symbols-outlined">expand_more</span>}
+                </div>
+                    {activeEquip && <div className="accordionHousing__content">
+                    {flatequipments}
+                </div>}
+            </div>
         </article>
     )
 }
