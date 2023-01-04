@@ -1,0 +1,14 @@
+.housing__tag {
+    display: flex;
+
+    span {
+        @include flex-center;
+        margin-right: 10px;
+        padding: 5px 20px 5px 20px;   
+        background-color: $colour-primary;
+        font-size: 9px;
+        font-weight: 400;
+        color: white;
+        border-radius: 5px;
+    }
+}

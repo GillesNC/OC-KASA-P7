@@ -8,7 +8,6 @@ function Carrousel () {
   const flatExist = DataFlat.find((DataFlat) => DataFlat.id === idUrl)
   const [currentIndex, setCurrentIndex] = useState(0);
   const images = flatExist.pictures;
-  console.log(images);
 
   const prev = () => {
     const newIndex = currentIndex - 1;

@@ -22,15 +22,6 @@ function AccordionHousing() {
             {active && <div className="accordion__content">
                 <p>{flatExist.description}</p>
             </div>}
-
-            <div className="accordion__title" onClick={handleClick}>
-                <h2>Equipements</h2>
-                {active ? <span className="material-symbols-outlined">expand_less</span> :
-                <span className="material-symbols-outlined">expand_more</span>}
-            </div>
-            {active && <div className="accordion__content">
-                <p>{flatExist.equipments}</p>
-            </div>}
         </article>
     )
 }

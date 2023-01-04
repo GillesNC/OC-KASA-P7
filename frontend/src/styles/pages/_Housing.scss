@@ -1,10 +1,11 @@
-@import "../utils/variable";
-@import "../utils/mixins";
-
 .housing {
     display: flex;
 
     section {
         width: 100%;
+    }
+
+    &__content {
+        margin: 20px 0 20px 0;
     }
 }
