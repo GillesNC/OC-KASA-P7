@@ -6,11 +6,47 @@
     }
 
     &__content {
-        margin: 20px 0 20px 0;
+        display: flex;
+        margin: 20px 0 0px 0;
+    }
+
+    &__title-tag {
+        width: 50%;
     }
 
     &__notation-profil {
+        width: 50%;
         display: flex;
-        justify-content: space-between;
+        flex-direction: column;
+    }
+}
+
+// Responsive Mobile
+@media screen and (max-width: 768px) {
+    .housing {
+        display: flex;
+    
+        section {
+            width: 100%;
+        }
+    
+        &__content {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            margin: 20px 0 0px 0;
+        }
+
+        &__title-tag {
+            width: 100%;
+        }
+    
+        &__notation-profil {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row-reverse;
+            width: 100%;
+            margin-top: 20px;
+        }
     }
 }

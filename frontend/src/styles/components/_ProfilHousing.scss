@@ -1,11 +1,12 @@
 .housing__profil {
-    @include flex-center;
+    display: flex;
+    justify-content: flex-end;
 
     .profil-name {
         display: flex;
-        align-items: center;
+        justify-content: flex-end;
         flex-wrap: wrap;
-        width: 50%;
+        width: 10%;
 
         p {
             text-align: end;
@@ -19,13 +20,46 @@
         display: flex;
         justify-content: flex-end;
         margin-left: 10px;
-        overflow: hidden;
+
 
         img {
             border: 1 solid $colour-secondary;
-            border-radius: 50%;
+            border-radius: 100%;
             width: 50px;
         }
     }
+}
 
+// Responsive Mobile
+@media screen and (max-width: 768px) {
+    .housing__profil {
+        @include flex-center;
+    
+        .profil-name {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            width: 50%;
+    
+            p {
+                text-align: end;
+                color: $colour-primary;
+                font-size: 15px;
+                font-weight: 500;
+            }
+        }
+    
+        .profil-photo {
+            display: flex;
+            justify-content: flex-end;
+            margin-left: 10px;
+            overflow: hidden;
+    
+            img {
+                border: 1 solid $colour-secondary;
+                border-radius: 50%;
+                width: 50px;
+            }
+        }
+    }
 }

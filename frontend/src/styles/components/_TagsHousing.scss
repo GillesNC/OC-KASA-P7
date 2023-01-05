@@ -3,12 +3,25 @@
 
     span {
         @include flex-center;
+        margin-top: 10px;
         margin-right: 10px;
         padding: 5px 20px 5px 20px;   
         background-color: $colour-primary;
-        font-size: 9px;
-        font-weight: 400;
+        font-size: 11px;
+        font-weight: 500;
         color: white;
         border-radius: 5px;
+    }
+}
+
+// Responsive Mobile
+@media screen and (max-width: 768px) {
+    .housing__tag {
+        display: flex;
+    
+        span {
+            font-size: 9px;
+            font-weight: 500;
+        }
     }
 }

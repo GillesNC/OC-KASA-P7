@@ -1,3 +1,47 @@
-.redStar {
-    color: $colour-primary;
+.rating {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    margin-top: 10px;
+
+    .redStar {
+        width: 25px;
+        color: $colour-primary;
+        font-variation-settings:
+        'FILL' 1
+    }
+    
+    .greyStar {
+        width: 25px;
+        color: #dadada;
+        font-variation-settings:
+        'FILL' 1
+    }
 }
+
+
+// Responsive Mobile
+@media screen and (max-width: 768px) {
+    .rating {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 140px;
+    
+        .redStar {
+            width: 25px;
+            color: $colour-primary;
+            font-variation-settings:
+            'FILL' 1
+        }
+        
+        .greyStar {
+            width: 25px;
+            color: #dadada;
+            font-variation-settings:
+            'FILL' 1
+        }
+    }
+}
+
