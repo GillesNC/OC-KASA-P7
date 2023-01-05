@@ -2,23 +2,34 @@ import React from "react";
 import { useParams } from "react-router-dom";
 import DataFlat from "../data/dataFlat.json";
 
-function RatingsHousing() {
+function NotationHousing() {
     const {idUrl} = useParams();
     const flatExist = DataFlat.find((DataFlat) => DataFlat.id === idUrl);
+
+    // const redStar = <span classname="material-icons redStar">star_rate</span>;
+    // const greyStar = <span classname="material-icons greyStar">star_rate</span>;
+
+    const notation = flatExist.rating;
+    const note = [1, 2, 3, 4, 5];
+
     return (
         <article>
-            <div className="housing__star">
-                <span>{flatExist.rating}</span>
-                <div className="housing__profil">
-                    <p>{flatExist.host.name}</p>
-                    <img src={flatExist.host.picture} alt={flatExist.host.name} />
-                </div>
-            </div>
+            {note.map ((i, index) => {
+                if (i <= notation) {
+                    return (
+                        <i class="fa-solid fa-star redStar"></i>
+                    )
+                } else {
+                    return (
+                        <i class="fa-solid fa-star"></i>
+                    )
+                }
+            })}
         </article>
     )
 }
 
-export default RatingsHousing;
+export default NotationHousing;
 
 // import { useParams } from 'react-router-dom'
 // import Data from "../data.json"
