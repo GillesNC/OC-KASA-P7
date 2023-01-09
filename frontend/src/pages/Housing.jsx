@@ -8,12 +8,13 @@ import AccordionHousing from "../components/AccordionHousing";
 import NotationHousing from "../components/NotationHousing";
 import ProfilHousing from "../components/ProfilHousing";
 
+//------Création et affichage de la fiche Logement demandée-----//
 function Housing () {
     const { idUrl } = useParams();
     const flatExist = DataFlat.find((DataFlat) => DataFlat.id === idUrl);
 
     return !flatExist ? (
-        <Navigate to="/error404" />
+        <Navigate to="/error404" /> //Redirection vers la page d'erreur 404 dans le cas d'un mauvais ID
     ) : (
         <main className="housing">
             <section className="housing__carrousel">

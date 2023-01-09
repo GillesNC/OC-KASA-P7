@@ -2,6 +2,7 @@ import React from "react";
 import { useParams } from "react-router-dom";
 import DataFlat from "../data/dataFlat.json";
 
+//------Création et affichage du système de notation sur la fiche logement demandée-----//
 function NotationHousing() {
     const { idUrl } = useParams();
     const flatExist = DataFlat.find((DataFlat) => DataFlat.id === idUrl);

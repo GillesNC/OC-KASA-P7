@@ -3,6 +3,7 @@ import { useState } from "react";
 import { useParams } from "react-router-dom";
 import DataFlat from "../data/dataFlat.json";
 
+//------Création et affichage du carraousel de la fiche logement demandée-----//
 function Carrousel () {
   const {idUrl} = useParams();
   const flatExist = DataFlat.find((DataFlat) => DataFlat.id === idUrl)
@@ -18,6 +19,8 @@ function Carrousel () {
     const newIndex = currentIndex + 1;
     setCurrentIndex(newIndex >= images.length ? 0 : newIndex);
   };
+
+  // const timer = setInterval(next, 2000)
 
   return (  
     <div>

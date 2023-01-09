@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import DataFlat from "../data/dataFlat.json";
 import { useState } from "react";
 
+//------Création des volets dépliant de la fiche logement-----//
 function AccordionHousing() {
     const {idUrl} = useParams();
     const flatExist = DataFlat.find((DataFlat) => DataFlat.id === idUrl);
@@ -10,11 +11,13 @@ function AccordionHousing() {
         return <p key={equipments}>{equipments}</p>
     })
 
+    //Active ou désactive le volet dépliant "Description" selon l'action de l'utilisateur
     const [activeDesc, setActiveDesc] = useState(false);
     const handleClickDesc = () => {
         setActiveDesc(!activeDesc);
     }
 
+    //Active ou désactive le volet dépliant "Équipements" selon l'action de l'utilisateur
     const [activeEquip, setActiveEquip] = useState(false);
     const handleClickEquip = () => {
         setActiveEquip(!activeEquip);

@@ -3,6 +3,7 @@ import BannerAbout from "../components/BannerAbout";
 import DataAbout from "../data/dataAbout.json";
 import AccordionAbout from "../components/AccordionAbout";
 
+//------Création et affichage de la page "About"-----//
 function About () {
     return (
         <main>

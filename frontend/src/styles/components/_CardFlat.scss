@@ -45,8 +45,53 @@
     }
 }
 
+// Responsive NoteBook 
+@media screen and (max-width:1882px) {
+    .flat {
+        display: flex;
+
+        &__card  {
+            width: 400px;
+            margin: 20px;
+        }
+
+        &__card:hover {
+            transform:scale(1.03);
+            transition: 800ms;
+        }
+
+        &__text { 
+            width: 400px;
+            height: 300px;
+        }
+    }
+}
+
+// Responsive Tablet
+@media screen and (max-width: 1200px) {
+    .flat {
+        display: flex;
+
+        &__card {
+            display: flex;
+            width: 400px;
+            margin: 20px;
+        }
+
+        &__card:hover {
+            transform:scale(1.03);
+            transition: 800ms;
+        }
+
+        &__text { 
+            width: 400px;
+            height: 300px;
+        }
+    }
+}
+
 // Responsive Mobile
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
     .flat {
         display: flex;
         flex-direction: column;
