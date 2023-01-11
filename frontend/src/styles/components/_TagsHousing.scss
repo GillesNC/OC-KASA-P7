@@ -1,5 +1,6 @@
 .housing__tag {
     display: flex;
+    flex-wrap: wrap;
 
     span {
         @include flex-center;
