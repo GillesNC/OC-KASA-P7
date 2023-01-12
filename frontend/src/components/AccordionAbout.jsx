@@ -1,9 +1,10 @@
 import React from "react";
 import { useState } from "react";
 
-//------Création des volets dépliants de la page "About"-----//
+//------CREATION DES VOLETS DEPLIANTS DE LA PAGE "ABOUT"-----// 
 function CollapsibleAccordion(props) {
-    //Active ou désactive le volet dépliant selon l'action de l'utilisateur
+
+    /* Activation ou désactivation des "Collapse" */
     const [active, setActive] = useState(false);
     const handleClick = () => {
         setActive(!active);

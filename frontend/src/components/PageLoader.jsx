@@ -1,6 +1,6 @@
 import React from "react";
 
-//------Création et affichage du page "Loader"-----//
+//------CREATION ET AFFICHAGE DE LA PAGE LOADER-----//
 function PageLoader () {
     return (
     <div className="container-loader">

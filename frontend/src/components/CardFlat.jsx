@@ -2,7 +2,7 @@ import React from "react";
 import DataFlat from "../data/dataFlat.json";
 import { Link } from "react-router-dom";
 
-//------Création des différentes card (Titre + photo) via la fichier JSON-----//
+//------CREATION DES DIFFERENTES "CARDS" (TITRE + PHOTO) VIA LE FICHIER JSON-----//
 function CardFlat() {
     return (
         DataFlat.map((DataFlat) => (

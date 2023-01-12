@@ -1,7 +1,7 @@
 import React from "react";
 import logoFooter from "../assets/logoFooter.png";
-// import "../styles/Footer.scss";
 
+//------CREATION ET AFFICHAGE DU FOOTER-----//
 function Footer() {
     return (
         <footer className="footer">

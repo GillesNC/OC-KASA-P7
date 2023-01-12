@@ -1,6 +1,6 @@
 import React from "react";
 
-//------Création et affichage de la bannière de la page "About"-----//
+//------CREATION ET AFFICHAGE DE LA BANNIERE POUR LA PAGE "ABOUT"-----//
 function BannerAbout () {
     return (
         <section className="bannerAbout">

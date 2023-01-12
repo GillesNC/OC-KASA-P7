@@ -1,6 +1,7 @@
 import React from "react";
 import LogoKasa from "../assets/logo.svg";
 
+//------CREATION ET AFFICHAGE DU HEADER-----//
 function Header () {
     return (
         <header className="header">

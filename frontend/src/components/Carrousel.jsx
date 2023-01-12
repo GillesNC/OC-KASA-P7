@@ -3,16 +3,16 @@ import { useState, useEffect, useRef } from "react";
 import { useParams } from "react-router-dom";
 import DataFlat from "../data/dataFlat.json";
 
-//------Création et affichage du carraousel de la fiche logement demandée-----//
+//------CREATION ET AFFICHAGE DU CAROUSSEL DE LA LOGEMENT DEMANDEE-----//
 function Carrousel () {
   const {idUrl} = useParams();
   const flatExist = DataFlat.find((DataFlat) => DataFlat.id === idUrl)
   const images = flatExist.pictures;
-
   const [currentIndex, setCurrentIndex] = useState(0);
   const [activeAutoplay, setActiveAutoplay] = useState(true);
   const autoplayRef = useRef();
 
+   /* Settings Caroussel */
   const settings = {
     maxItems : images.length,
     speed: 1500,
@@ -20,6 +20,7 @@ function Carrousel () {
     autoplaySpeed: 3000
   }
 
+  /* Autoplay Caroussel */
   const playTimer = () => {
     console.log("play Timer");
     setActiveAutoplay(true);
@@ -39,6 +40,7 @@ function Carrousel () {
     }
   });
 
+   /* Pagination Caroussel */
   const pagination = index => {
     return (
       <div className="pagination">
@@ -47,14 +49,15 @@ function Carrousel () {
     );
   };
 
+  /* Button Next & Prev */
   const prev = () => {
     const newIndex = currentIndex - 1;
-    setCurrentIndex(newIndex < 0 ? images.length - 1 : newIndex);
+    setCurrentIndex(newIndex < 0 ? settings.maxItems - 1 : newIndex);
   };
     
   const next = () => {
     const newIndex = currentIndex + 1;
-    setCurrentIndex(newIndex >= images.length ? 0 : newIndex);
+    setCurrentIndex(newIndex >= settings.maxItems ? 0 : newIndex);
   };
 
   return (  

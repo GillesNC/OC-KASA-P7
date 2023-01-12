@@ -9,7 +9,7 @@ import NotationHousing from "../components/NotationHousing";
 import ProfilHousing from "../components/ProfilHousing";
 import PageLoader from "../components/PageLoader";
 
-//------Création et affichage de la fiche Logement demandée-----//
+//------CREATION ET AFFICHAGE DE LA FICHE LOGEMENT DEMANDEE-----//
 function Housing () {
     const { idUrl } = useParams();
     const flatExist = DataFlat.find((DataFlat) => DataFlat.id === idUrl);
@@ -25,17 +25,17 @@ function Housing () {
     
             <section className="housing__content">
                 <div className="housing__title-tag">
-                        <TitleHousing />
-                        <TagsHousing />
+                    <TitleHousing />
+                    <TagsHousing />
                 </div>
                 <div className="housing__notation-profil">
-                        <ProfilHousing />
-                        <NotationHousing />
+                    <ProfilHousing />
+                    <NotationHousing />
                 </div>
             </section>
     
             <section className="housing__accordion">
-                    <AccordionHousing />
+                <AccordionHousing />
             </section>
         </main>
     )

@@ -2,7 +2,7 @@ import React from "react";
 import { useParams } from "react-router-dom";
 import DataFlat from "../data/dataFlat.json";
 
-//------Création et affichage des différents tags de la fiche logement demandée-----//
+//------CREATION ET AFFICHAGE DES DIFFERENTS "TAGS" DE LA FICHE LOGEMENT DEMANDEE-----//
 function TagsHousing () {
     const {idUrl} = useParams();
     const flatExist = DataFlat.find((DataFlat) => DataFlat.id === idUrl);

@@ -1,6 +1,6 @@
 import React from "react";
 
-//------Création et affichage de la page d'erreur 404-----//
+//------CREATION ET AFFICHAGE DE LA PAGE D'ERREUR 404-----//
 function Error() {
     return (
         <main className="error404">

@@ -8,6 +8,7 @@ import Header from './layouts/Header';
 import Footer from './layouts/Footer';
 import { Route, Routes } from 'react-router-dom';
 
+//------CREATION DES DIFFERENTES ROUTES ET AFFICHAGE DU HEADER & FOOTER SUR TOUTES LES PAGES-----//
 function App() {
   return (
     <div className="App">

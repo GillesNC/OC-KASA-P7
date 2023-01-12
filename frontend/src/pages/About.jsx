@@ -4,7 +4,7 @@ import DataAbout from "../data/dataAbout.json";
 import AccordionAbout from "../components/AccordionAbout";
 import PageLoader from "../components/PageLoader";
 
-//------Création et affichage de la page "About"-----//
+//------CREATION ET AFFICHAGE DE LA PAGE "ABOUT"-----// 
 function About () {
     return (
         <main>

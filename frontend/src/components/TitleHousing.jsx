@@ -2,7 +2,7 @@ import React from "react";
 import { useParams } from "react-router-dom";
 import DataFlat from "../data/dataFlat.json";
 
-//------Création et affichage du titre de l'annonce de al fiche logement demandée-----//
+//------CREATION ET AFFICHAGE DU TITRE DE L'ANNONCE DE LA FICHE LOGEMENT DEMANDEE-----//
 function TitleHousing () {
     const {idUrl} = useParams();
     const flatExist = DataFlat.find((DataFlat) => DataFlat.id === idUrl)

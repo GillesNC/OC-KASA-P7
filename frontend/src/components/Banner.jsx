@@ -1,6 +1,6 @@
 import React from "react";
 
-//------Création et affichage de la bannière pour la page "Home"-----//
+//------CREATION ET AFFICHAGE DE LA BANNIERE POUR LA PAGE "HOME"-----//
 function Banner () {
     return (
         <section className="banner">

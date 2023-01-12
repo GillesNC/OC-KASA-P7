@@ -2,7 +2,7 @@ import React from "react";
 import Banner from "../components/Banner.jsx"
 import CardFlat from "../components/CardFlat.jsx";
 
-//------Création et affichage de la page "Home"-----//
+//------CREATION ET AFFICHAGE DE LA PAGE "HOME"-----//
 function Home() {
     return(
         <main>
