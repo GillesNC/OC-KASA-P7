@@ -21,22 +21,22 @@ function Housing () {
             <PageLoader />
             <section className="housing__carrousel">
                     <Carrousel />
-                </section>
+            </section>
     
-                <section className="housing__content">
-                    <div className="housing__title-tag">
+            <section className="housing__content">
+                <div className="housing__title-tag">
                         <TitleHousing />
                         <TagsHousing />
-                    </div>
-                    <div className="housing__notation-profil">
+                </div>
+                <div className="housing__notation-profil">
                         <ProfilHousing />
                         <NotationHousing />
-                    </div>
-                </section>
+                </div>
+            </section>
     
-                <section className="housing__accordion">
+            <section className="housing__accordion">
                     <AccordionHousing />
-                </section>
+            </section>
         </main>
     )
 }
