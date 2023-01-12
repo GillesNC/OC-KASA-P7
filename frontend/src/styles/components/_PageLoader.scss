@@ -1,0 +1,59 @@
+.container-loader {
+    background-color: #ffffffe9;
+    position: fixed;
+    inset: 0;
+    height: 100vh;
+    z-index: 2;
+    animation: background-disappear 0.5s 3s both;
+}
+
+@keyframes background-disappear {
+    100% {
+        opacity: 0;
+        z-index: -1;
+    }
+}
+
+//Loanding Spinner
+.loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.circle {
+    background-color: $colour-primary;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    transform: scale(0);
+    animation: grow 2s linear infinite;
+    margin: -10px;
+}
+
+.circle:nth-child(2) {
+    background-color: $colour-secondary;
+    animation-delay: 0.75s;
+}
+
+.circle:nth-child(3) {
+    background-color: $colour-tertiary;
+    animation-delay: 1s;
+    position: relative;
+    top: 20px;
+    right: 30px;
+}
+
+@keyframes rotate {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes grow {
+    50% {
+        transform: scale(1);
+    }
+}

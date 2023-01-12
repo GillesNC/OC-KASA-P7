@@ -7,6 +7,7 @@ import TagsHousing from "../components/TagsHousing";
 import AccordionHousing from "../components/AccordionHousing";
 import NotationHousing from "../components/NotationHousing";
 import ProfilHousing from "../components/ProfilHousing";
+import PageLoader from "../components/PageLoader";
 
 //------Création et affichage de la fiche Logement demandée-----//
 function Housing () {
@@ -17,6 +18,7 @@ function Housing () {
         <Navigate to="/error404" /> //Redirection vers la page d'erreur 404 dans le cas d'un mauvais ID
     ) : (
         <main className="housing">
+            <PageLoader />
             <section className="housing__carrousel">
                     <Carrousel />
                 </section>
