@@ -3,7 +3,7 @@ import { useState, useEffect, useRef } from "react";
 import { useParams } from "react-router-dom";
 import DataFlat from "../data/dataFlat.json";
 
-//------CREATION ET AFFICHAGE DU CAROUSSEL DE LA LOGEMENT DEMANDEE-----//
+//------CREATION ET AFFICHAGE DU CAROUSSEL DE LA FICHE LOGEMENT DEMANDEE-----//
 function Carrousel () {
   const {idUrl} = useParams();
   const flatExist = DataFlat.find((DataFlat) => DataFlat.id === idUrl)

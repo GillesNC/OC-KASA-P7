@@ -7,9 +7,9 @@ function Home() {
     return(
         <main>
             <Banner />
-                <section className="CardFlat">
-                    <CardFlat />
-                </section>
+            <section className="CardFlat">
+                <CardFlat />
+            </section>
         </main>
     )
 }
