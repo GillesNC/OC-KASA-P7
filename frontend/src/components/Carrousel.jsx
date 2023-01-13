@@ -60,20 +60,42 @@ function Carrousel () {
     setCurrentIndex(newIndex >= settings.maxItems ? 0 : newIndex);
   };
 
-  return (  
+  /* Détermine si le caroussel doit afficher les boutons & la pagination selon le nbr de "Picture" dans la BDD  */
+  const displayCaroussel = () => {
+    switch (true) {
+      case settings.maxItems > 1:
+        return (  
+          <article>
+            <img src={images[currentIndex]} alt="Carousel" />
+            <div className="carrousel-container">
+              <div className="icon-arrow">
+                <span className="material-symbols-outlined prev" onClick={prev} onMouseEnter={pauseTimer} onMouseLeave={playTimer}>chevron_left</span>
+                <span className="material-symbols-outlined next" onClick={next} onMouseEnter={pauseTimer} onMouseLeave={playTimer}>chevron_right</span>
+              </div>
+              <div className="pagination-container">
+                {pagination(currentIndex)}
+              </div>
+            </div>
+          </article>
+        );
+
+      case settings.maxItems <= 1:
+        return (
+          <article>
+            <img src={images[currentIndex]} alt="Carousel" />
+          </article>
+        );
+
+      default:
+        return null;
+    }
+  }
+
+  return (
     <article>
-      <img src={images[currentIndex]} alt="Carousel" />
-      <div className="carrousel-container">
-        <div className="icon-arrow">
-          <span className="material-symbols-outlined prev" onClick={prev} onMouseEnter={pauseTimer} onMouseLeave={playTimer}>chevron_left</span>
-          <span className="material-symbols-outlined next" onClick={next} onMouseEnter={pauseTimer} onMouseLeave={playTimer}>chevron_right</span>
-        </div>
-        <div className="pagination-container">
-          {pagination(currentIndex)}
-        </div>
-      </div>
+      {displayCaroussel()}
     </article>
-  )
+  );
 }
 
 export default Carrousel;

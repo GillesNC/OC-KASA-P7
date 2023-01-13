@@ -16,10 +16,12 @@ function NotationHousing() {
         return (
           <span key={index} className="material-symbols-outlined redStar">star</span>
         );
+
       case note > notation:
         return (
           <span key={index} className="material-symbols-outlined greyStar">star</span>
         );
+        
       default:
         return null;
     }
