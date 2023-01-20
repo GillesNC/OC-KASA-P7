@@ -12,7 +12,7 @@ function Carrousel () {
   const [activeAutoplay, setActiveAutoplay] = useState(true);
   const autoplayRef = useRef();
 
-   /* Settings Caroussel */
+  /* Settings Caroussel */
   const settings = {
     maxItems : images.length,
     speed: 1500,
@@ -40,7 +40,7 @@ function Carrousel () {
     }
   });
 
-   /* Pagination Caroussel */
+  /* Pagination Caroussel */
   const pagination = index => {
     return (
       <div className="pagination">
