@@ -1,8 +1,8 @@
 import React from "react";
 import { useState } from "react";
 
-//------CREATION DES VOLETS DEPLIANTS DE LA PAGE "ABOUT"-----// 
-function CollapsibleAccordion({title, content}) {
+//------CREATION DES VOLETS DEPLIANTS-----//
+function Collapse({title, content}) {
 
     /* Activation ou désactivation des "Collapse" */
     const [active, setActive] = useState(false);
@@ -21,7 +21,7 @@ function CollapsibleAccordion({title, content}) {
                 <p>{content}</p>
             </div>}
         </article>
-    )    
-}
+    )
+};
 
-export default CollapsibleAccordion;
+export default Collapse;

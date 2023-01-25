@@ -4,15 +4,19 @@ import DataFlat from "../data/dataFlat.json";
 import Carrousel from "../components/Carrousel";
 import TitleHousing from "../components/TitleHousing";
 import TagsHousing from "../components/TagsHousing";
-import AccordionHousing from "../components/AccordionHousing";
 import NotationHousing from "../components/NotationHousing";
 import ProfilHousing from "../components/ProfilHousing";
 import PageLoader from "../components/PageLoader";
+import Collapse from "../components/Collapse";
 
 //------CREATION ET AFFICHAGE DE LA FICHE LOGEMENT DEMANDEE-----//
 function Housing () {
     const { idUrl } = useParams();
     const flatExist = DataFlat.find((DataFlat) => DataFlat.id === idUrl);
+    const flatequipments = flatExist.equipments.map (equipments => {
+        return <span key={equipments}>{equipments}</span>
+    })
+
 
     return !flatExist ? (
         <Navigate to="/error404" /> //Redirection vers la page d'erreur 404 dans le cas d'un mauvais ID
@@ -35,7 +39,8 @@ function Housing () {
             </section>
     
             <section className="housing__accordion">
-                <AccordionHousing />
+                <Collapse title="Description" content={flatExist.description}/>
+                <Collapse title="Equipement" content={flatequipments}/>
             </section>
         </main>
     )
