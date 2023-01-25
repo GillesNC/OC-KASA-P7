@@ -18,7 +18,7 @@ function Collapse({title, content}) {
                 <span className="material-symbols-outlined">expand_more</span>}
             </div>
             {active && <div className="accordion__content">
-                <p>{content}</p>
+                {content}
             </div>}
         </article>
     )

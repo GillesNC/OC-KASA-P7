@@ -12,7 +12,7 @@ function About () {
             <BannerAbout />
             <section className="about">
                 {DataAbout.map (({title, content}) => (
-                    <Collapse title={title} content={content} key={title}/>
+                    <Collapse title={title} content=<p>{content}</p> key={title}/>
                 ))}
             </section>
         </main>
