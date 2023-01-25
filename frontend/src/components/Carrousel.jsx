@@ -38,7 +38,8 @@ function Carrousel () {
         next();
       }, settings.autoplaySpeed);
     }
-  });
+  }
+  );
 
   /* Pagination Caroussel */
   const pagination = index => {
